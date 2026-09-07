@@ -63,6 +63,10 @@ gradlePlugin {
             id = "com.embarrasdf.gradle.plugin.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
+        register("androidBaselineProfileApp") {
+            id = "com.embarrasdf.gradle.plugin.android.baselineprofile.app"
+            implementationClass = "AndroidBaselineProfileAppConventionPlugin"
+        }
         register("androidBaselineProfileConsumer") {
             id = "com.embarrasdf.gradle.plugin.android.baselineprofile.consumer"
             implementationClass = "AndroidBaselineProfileConsumerConventionPlugin"
