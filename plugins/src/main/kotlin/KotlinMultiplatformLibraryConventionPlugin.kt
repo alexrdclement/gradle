@@ -1,9 +1,9 @@
-import com.alexrdclement.gradle.plugin.AndroidLibraryTargetConfiguration
-import com.alexrdclement.gradle.plugin.IosFrameworkConfiguration
-import com.alexrdclement.gradle.plugin.IosLibraryTargetConfiguration
-import com.alexrdclement.gradle.plugin.configure
-import com.alexrdclement.gradle.plugin.configureKotlin
-import com.alexrdclement.gradle.plugin.configureKotlinMultiplatformAndroidLibrary
+import com.embarrasdf.gradle.plugin.AndroidLibraryTargetConfiguration
+import com.embarrasdf.gradle.plugin.IosFrameworkConfiguration
+import com.embarrasdf.gradle.plugin.IosLibraryTargetConfiguration
+import com.embarrasdf.gradle.plugin.configure
+import com.embarrasdf.gradle.plugin.configureKotlin
+import com.embarrasdf.gradle.plugin.configureKotlinMultiplatformAndroidLibrary
 import com.android.build.api.dsl.KotlinMultiplatformAndroidLibraryExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -29,7 +29,7 @@ enum class KotlinTarget {
  * ```kotlin
  * kotlin {
  *     libraryTargets(
- *         androidNamespace = "com.alexrdclement.library",
+ *         androidNamespace = "com.embarrasdf.library",
  *         iosFrameworkBaseName = "MyLibrary",
  *     )
  * ...
@@ -40,7 +40,7 @@ enum class KotlinTarget {
  * ```kotlin
  * kotlin {
  *     libraryTargets(
- *         androidNamespace = "com.alexrdclement.library",
+ *         androidNamespace = "com.embarrasdf.library",
  *         iosFrameworkBaseName = "MyLibrary",
  *         targets = setOf(KotlinTarget.ANDROID, KotlinTarget.IOS),
  *     )

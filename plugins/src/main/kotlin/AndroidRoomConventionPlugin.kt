@@ -1,5 +1,5 @@
 import androidx.room.gradle.RoomExtension
-import com.alexrdclement.gradle.plugin.Libs
+import com.embarrasdf.gradle.plugin.Libs
 import com.google.devtools.ksp.gradle.KspExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project

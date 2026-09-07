@@ -1,4 +1,4 @@
-package com.alexrdclement.gradle.plugin
+package com.embarrasdf.gradle.plugin
 
 import com.android.build.api.dsl.CommonExtension
 import org.gradle.api.Project

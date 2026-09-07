@@ -7,7 +7,7 @@ class GenerateLibsPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         val generateLibs = target.tasks.register<GenerateLibsTask>("generateLibs") {
             tomlFile.set(target.rootProject.file("gradle/libs.versions.toml"))
-            outputFile.set(target.layout.buildDirectory.file("generated/kotlin/com/alexrdclement/gradle/plugin/Libs.kt"))
+            outputFile.set(target.layout.buildDirectory.file("generated/kotlin/com/embarrasdf/gradle/plugin/Libs.kt"))
         }
 
         target.extensions.configure(KotlinProjectExtension::class.java) {

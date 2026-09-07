@@ -1,4 +1,4 @@
-import com.alexrdclement.gradle.plugin.configureKotlinJvm
+import com.embarrasdf.gradle.plugin.configureKotlinJvm
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 

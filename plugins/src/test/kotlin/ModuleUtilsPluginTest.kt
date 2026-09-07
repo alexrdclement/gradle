@@ -32,7 +32,7 @@ class ModuleUtilsPluginTest {
             kotlin = "2.2.20"
 
             [plugins]
-            alexrdclement-kotlin-multiplatform-library = { id = "com.alexrdclement.gradle.plugin.kotlin.multiplatform.library", version = "0.0.1" }
+            embarrasdf-kotlin-multiplatform-library = { id = "com.embarrasdf.gradle.plugin.kotlin.multiplatform.library", version = "0.0.1" }
         """.trimIndent())
 
         settingsFile.writeText("""
@@ -43,7 +43,7 @@ class ModuleUtilsPluginTest {
 
         buildFile.writeText("""
             plugins {
-                id("com.alexrdclement.gradle.plugin.module.utils")
+                id("com.embarrasdf.gradle.plugin.module.utils")
             }
         """.trimIndent())
 

@@ -3,11 +3,11 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     `java-gradle-plugin`
     `kotlin-dsl`
-    alias(alexrdclementPluginLibs.plugins.maven.publish)
+    alias(embarrasdfPluginLibs.plugins.maven.publish)
     id("generate-libs")
 }
 
-group = "com.alexrdclement.gradle.plugin"
+group = "com.embarrasdf.gradle.plugin"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -21,24 +21,24 @@ kotlin {
 }
 
 dependencies {
-    implementation(alexrdclementPluginLibs.android.gradle.plugin)
-    implementation(alexrdclementPluginLibs.android.kotlin.multiplatform.library.plugin)
-    implementation(alexrdclementPluginLibs.android.tools.common)
-    implementation(alexrdclementPluginLibs.androidx.baselineprofile.plugin)
-    implementation(alexrdclementPluginLibs.jetbrains.compose)
-    implementation(alexrdclementPluginLibs.compose.compiler.plugin)
-    implementation(alexrdclementPluginLibs.kotlin.gradle.plugin)
-    implementation(alexrdclementPluginLibs.kotlin.multiplatform.plugin)
-    implementation(alexrdclementPluginLibs.kotlin.serialization.plugin)
-    implementation(alexrdclementPluginLibs.ksp.gradle.plugin)
-    implementation(alexrdclementPluginLibs.room.gradle.plugin)
-    implementation(alexrdclementPluginLibs.shipkit.autoversion.plugin)
-    implementation(alexrdclementPluginLibs.shipkit.changelog.plugin)
-    implementation(alexrdclementPluginLibs.maven.publish.plugin)
-    implementation(alexrdclementPluginLibs.firebase.testlab.plugin)
+    implementation(embarrasdfPluginLibs.android.gradle.plugin)
+    implementation(embarrasdfPluginLibs.android.kotlin.multiplatform.library.plugin)
+    implementation(embarrasdfPluginLibs.android.tools.common)
+    implementation(embarrasdfPluginLibs.androidx.baselineprofile.plugin)
+    implementation(embarrasdfPluginLibs.jetbrains.compose)
+    implementation(embarrasdfPluginLibs.compose.compiler.plugin)
+    implementation(embarrasdfPluginLibs.kotlin.gradle.plugin)
+    implementation(embarrasdfPluginLibs.kotlin.multiplatform.plugin)
+    implementation(embarrasdfPluginLibs.kotlin.serialization.plugin)
+    implementation(embarrasdfPluginLibs.ksp.gradle.plugin)
+    implementation(embarrasdfPluginLibs.room.gradle.plugin)
+    implementation(embarrasdfPluginLibs.shipkit.autoversion.plugin)
+    implementation(embarrasdfPluginLibs.shipkit.changelog.plugin)
+    implementation(embarrasdfPluginLibs.maven.publish.plugin)
+    implementation(embarrasdfPluginLibs.firebase.testlab.plugin)
 
-    testImplementation(alexrdclementPluginLibs.junit.jupiter)
-    testImplementation(alexrdclementPluginLibs.junit.platform.launcher)
+    testImplementation(embarrasdfPluginLibs.junit.jupiter)
+    testImplementation(embarrasdfPluginLibs.junit.platform.launcher)
     testImplementation(gradleTestKit())
 }
 
@@ -56,87 +56,87 @@ tasks {
 gradlePlugin {
     plugins {
         register("androidApplicationCompose") {
-            id = "com.alexrdclement.gradle.plugin.android.application.compose"
+            id = "com.embarrasdf.gradle.plugin.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
         register("androidApplication") {
-            id = "com.alexrdclement.gradle.plugin.android.application"
+            id = "com.embarrasdf.gradle.plugin.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidBaselineProfileConsumer") {
-            id = "com.alexrdclement.gradle.plugin.android.baselineprofile.consumer"
+            id = "com.embarrasdf.gradle.plugin.android.baselineprofile.consumer"
             implementationClass = "AndroidBaselineProfileConsumerConventionPlugin"
         }
         register("androidBaselineProfileGenerator") {
-            id = "com.alexrdclement.gradle.plugin.android.baselineprofile.generator"
+            id = "com.embarrasdf.gradle.plugin.android.baselineprofile.generator"
             implementationClass = "AndroidBaselineProfileGeneratorConventionPlugin"
         }
         register("androidBenchmark") {
-            id = "com.alexrdclement.gradle.plugin.android.benchmark"
+            id = "com.embarrasdf.gradle.plugin.android.benchmark"
             implementationClass = "AndroidBenchmarkConventionPlugin"
         }
         register("androidInstrumentedTest") {
-            id = "com.alexrdclement.gradle.plugin.android.instrumented.test"
+            id = "com.embarrasdf.gradle.plugin.android.instrumented.test"
             implementationClass = "AndroidInstrumentedTestConventionPlugin"
         }
         register("androidLibraryCompose") {
-            id = "com.alexrdclement.gradle.plugin.android.library.compose"
+            id = "com.embarrasdf.gradle.plugin.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
         register("androidLibrary") {
-            id = "com.alexrdclement.gradle.plugin.android.library"
+            id = "com.embarrasdf.gradle.plugin.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidComposeTest") {
-            id = "com.alexrdclement.gradle.plugin.android.compose.test"
+            id = "com.embarrasdf.gradle.plugin.android.compose.test"
             implementationClass = "AndroidComposeTestConventionPlugin"
         }
         register("androidLibraryTestFixtures") {
-            id = "com.alexrdclement.gradle.plugin.android.library.test.fixtures"
+            id = "com.embarrasdf.gradle.plugin.android.library.test.fixtures"
             implementationClass = "AndroidLibraryTestFixturesConventionPlugin"
         }
         register("androidTest") {
-            id = "com.alexrdclement.gradle.plugin.android.test"
+            id = "com.embarrasdf.gradle.plugin.android.test"
             implementationClass = "AndroidTestConventionPlugin"
         }
         register("androidRoom") {
-            id = "com.alexrdclement.gradle.plugin.android.room"
+            id = "com.embarrasdf.gradle.plugin.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
         register("composeMultiplatform") {
-            id = "com.alexrdclement.gradle.plugin.compose.multiplatform"
+            id = "com.embarrasdf.gradle.plugin.compose.multiplatform"
             implementationClass = "ComposeMultiplatformConventionPlugin"
         }
         register("desktopApplication") {
-            id = "com.alexrdclement.gradle.plugin.desktop.application"
+            id = "com.embarrasdf.gradle.plugin.desktop.application"
             implementationClass = "DesktopApplicationConventionPlugin"
         }
         register("githubRelease") {
-            id = "com.alexrdclement.gradle.plugin.github.release"
+            id = "com.embarrasdf.gradle.plugin.github.release"
             implementationClass = "GithubReleaseConventionPlugin"
         }
         register("jvmLibrary") {
-            id = "com.alexrdclement.gradle.plugin.jvm.library"
+            id = "com.embarrasdf.gradle.plugin.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
         register("kotlinMultiplatformLibrary") {
-            id = "com.alexrdclement.gradle.plugin.kotlin.multiplatform.library"
+            id = "com.embarrasdf.gradle.plugin.kotlin.multiplatform.library"
             implementationClass = "KotlinMultiplatformLibraryConventionPlugin"
         }
         register("kotlinSerialization") {
-            id = "com.alexrdclement.gradle.plugin.kotlin.serialization"
+            id = "com.embarrasdf.gradle.plugin.kotlin.serialization"
             implementationClass = "KotlinSerializationConventionPlugin"
         }
         register("mavenPublish") {
-            id = "com.alexrdclement.gradle.plugin.maven.publish"
+            id = "com.embarrasdf.gradle.plugin.maven.publish"
             implementationClass = "MavenPublishConventionPlugin"
         }
         register("moduleUtils") {
-            id = "com.alexrdclement.gradle.plugin.module.utils"
+            id = "com.embarrasdf.gradle.plugin.module.utils"
             implementationClass = "ModuleUtilsPlugin"
         }
         register("webApplication") {
-            id = "com.alexrdclement.gradle.plugin.web.application"
+            id = "com.embarrasdf.gradle.plugin.web.application"
             implementationClass = "WebApplicationConventionPlugin"
         }
     }

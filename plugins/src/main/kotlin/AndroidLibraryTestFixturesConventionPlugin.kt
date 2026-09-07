@@ -1,6 +1,6 @@
-import com.alexrdclement.gradle.plugin.AndroidMinSdk
-import com.alexrdclement.gradle.plugin.configureKotlinAndroid
-import com.alexrdclement.gradle.plugin.disableUnnecessaryAndroidTests
+import com.embarrasdf.gradle.plugin.AndroidMinSdk
+import com.embarrasdf.gradle.plugin.configureKotlinAndroid
+import com.embarrasdf.gradle.plugin.disableUnnecessaryAndroidTests
 import com.android.build.api.dsl.LibraryExtension
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
 import org.gradle.api.Plugin

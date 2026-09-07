@@ -14,7 +14,7 @@ dependencyResolutionManagement {
         gradlePluginPortal()
     }
     versionCatalogs {
-        create("alexrdclementPluginLibs") {
+        create("embarrasdfPluginLibs") {
             from(files("gradle/libs.versions.toml"))
         }
     }
