@@ -33,7 +33,7 @@ open class GithubReleaseExtension {
  *
  * ```kotlin
  * plugins {
- *     id("com.alexrdclement.gradle.plugin.github.release")
+ *     id("com.embarrasdf.gradle.plugin.github.release")
  * }
  *
  * githubRelease {

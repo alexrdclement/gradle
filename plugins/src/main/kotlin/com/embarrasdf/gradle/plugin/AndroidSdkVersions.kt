@@ -1,4 +1,4 @@
-package com.alexrdclement.gradle.plugin
+package com.embarrasdf.gradle.plugin
 
 const val AndroidMinSdk = 26
 const val AndroidTargetSdk = 36

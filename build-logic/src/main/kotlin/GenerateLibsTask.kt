@@ -32,7 +32,7 @@ abstract class GenerateLibsTask : DefaultTask() {
         }
 
         val kotlinCode = buildString {
-            appendLine("package com.alexrdclement.gradle.plugin")
+            appendLine("package com.embarrasdf.gradle.plugin")
             appendLine()
             appendLine("// This file is auto-generated from gradle/libs.versions.toml")
             appendLine("// Do not edit manually - changes will be overwritten")

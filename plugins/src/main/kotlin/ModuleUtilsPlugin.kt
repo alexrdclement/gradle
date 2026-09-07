@@ -89,7 +89,7 @@ abstract class CreateKmpLibraryModuleTask : DefaultTask() {
             .joinToString("") { it.replaceFirstChar { c -> c.uppercase() } }
         val buildFileContent = """
             plugins {
-                id(libs.plugins.alexrdclement.kotlin.multiplatform.library.get().pluginId)
+                id(libs.plugins.embarrasdf.kotlin.multiplatform.library.get().pluginId)
             }
 
             kotlin {

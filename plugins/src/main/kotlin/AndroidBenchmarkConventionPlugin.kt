@@ -1,4 +1,4 @@
-import com.alexrdclement.gradle.plugin.Libs
+import com.embarrasdf.gradle.plugin.Libs
 import com.android.build.api.dsl.TestExtension
 import com.google.firebase.testlab.gradle.TestLabGradlePluginExtension
 import org.gradle.api.Plugin
@@ -21,7 +21,7 @@ import org.gradle.kotlin.dsl.register
  * Usage in benchmark build.gradle.kts:
  * ```kotlin
  * plugins {
- *     id("com.alexrdclement.gradle.plugin.android.benchmark")
+ *     id("com.embarrasdf.gradle.plugin.android.benchmark")
  * }
  *
  * android {
@@ -79,7 +79,7 @@ class AndroidBenchmarkConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply("com.alexrdclement.gradle.plugin.android.test")
+                apply("com.embarrasdf.gradle.plugin.android.test")
                 apply("com.google.firebase.testlab")
             }
 

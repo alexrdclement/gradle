@@ -18,7 +18,7 @@ import java.io.File
  * Usage in consumer build.gradle.kts:
  * ```kotlin
  * plugins {
- *     id("com.alexrdclement.gradle.plugin.android.baselineprofile.consumer")
+ *     id("com.embarrasdf.gradle.plugin.android.baselineprofile.consumer")
  * }
  *
  * dependencies {

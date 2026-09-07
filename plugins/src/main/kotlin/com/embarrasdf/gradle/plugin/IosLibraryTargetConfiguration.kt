@@ -1,4 +1,4 @@
-package com.alexrdclement.gradle.plugin
+package com.embarrasdf.gradle.plugin
 
 import org.jetbrains.kotlin.gradle.plugin.mpp.Framework
 
