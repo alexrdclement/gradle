@@ -63,9 +63,13 @@ gradlePlugin {
             id = "com.embarrasdf.gradle.plugin.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
-        register("androidBaselineProfileConsumer") {
-            id = "com.embarrasdf.gradle.plugin.android.baselineprofile.consumer"
-            implementationClass = "AndroidBaselineProfileConsumerConventionPlugin"
+        register("androidBaselineProfileConsumerApp") {
+            id = "com.embarrasdf.gradle.plugin.android.baselineprofile.consumer.app"
+            implementationClass = "AndroidBaselineProfileConsumerAppConventionPlugin"
+        }
+        register("androidBaselineProfileConsumerLibrary") {
+            id = "com.embarrasdf.gradle.plugin.android.baselineprofile.consumer.library"
+            implementationClass = "AndroidBaselineProfileConsumerLibraryConventionPlugin"
         }
         register("androidBaselineProfileGenerator") {
             id = "com.embarrasdf.gradle.plugin.android.baselineprofile.generator"

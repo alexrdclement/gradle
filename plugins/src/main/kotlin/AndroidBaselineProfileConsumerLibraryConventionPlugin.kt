@@ -18,7 +18,7 @@ import java.io.File
  * Usage in consumer build.gradle.kts:
  * ```kotlin
  * plugins {
- *     id("com.embarrasdf.gradle.plugin.android.baselineprofile.consumer")
+ *     id("com.embarrasdf.gradle.plugin.android.baselineprofile.consumer.library")
  * }
  *
  * dependencies {
@@ -30,7 +30,7 @@ import java.io.File
  * - `tasks.configureEach { if (name == "collectNonMinifiedReleaseBaselineProfile") finalizedBy(":library:copyBaselineProfile") }`
  * - Or run manually: `./gradlew :library:copyBaselineProfile`
  */
-class AndroidBaselineProfileConsumerConventionPlugin : Plugin<Project> {
+class AndroidBaselineProfileConsumerLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             // Create the baselineProfile configuration with appropriate attributes
